@@ -4,6 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.atguigu.gulimall</groupId>
     <artifactId>gulimall</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>gulimall</name>
     <description>聚合服务</description>
@@ -14,6 +15,9 @@
         <module>gulimall-order</module>
         <module>gulimall-member</module>
         <module>gulimall-coupon</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>gulimall-common</module>
     </modules>
 
 </project>
