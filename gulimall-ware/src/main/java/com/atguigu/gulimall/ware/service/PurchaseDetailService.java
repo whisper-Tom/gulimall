@@ -1,0 +1,25 @@
+package com.atguigu.gulimall.ware.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.atguigu.common.utils.PageUtils;
+import com.atguigu.gulimall.ware.entity.PurchaseDetailEntity;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * 
+ *
+ * @author qkj
+ * @email 413661554@qq.com
+ * @date 2021-01-11 23:24:26
+ */
+@Service
+public interface PurchaseDetailService extends IService<PurchaseDetailEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+
+    List<PurchaseDetailEntity> listDetailByPurchaseId(Long id);
+}
+
