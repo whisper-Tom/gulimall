@@ -8,7 +8,7 @@
         <version>2.1.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.niceseason</groupId>
+    <groupId>com.atguigu.gulimall</groupId>
     <artifactId>gulimall-coupon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gulimall-coupon</name>
@@ -39,6 +39,8 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+
     </dependencies>
 
     <dependencyManagement>
