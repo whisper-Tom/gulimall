@@ -255,6 +255,7 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         return pageUtils;
     }
 
+    @Transactional
     @Override
     public void upSpuForSearch(Long spuId) {
 
@@ -300,7 +301,9 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
             skuEsModel.setBrandName(brandEntity.getName());
             skuEsModel.setBrandImg(brandEntity.getLogo());
             CategoryEntity categoryEntity = categoryService.getById(sku.getCatalogId());
-            skuEsModel.setCatalogName(categoryEntity.getName());
+            if(categoryEntity!=null){
+                skuEsModel.setCatalogName(categoryEntity.getName());
+            }
             //设置可搜索属性
             skuEsModel.setAttrs(searchAttrs);
             //设置是否有库存

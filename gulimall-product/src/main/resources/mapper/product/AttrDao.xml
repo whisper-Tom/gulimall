@@ -18,4 +18,24 @@
     </resultMap>
 
 
+
+
+    <select id="selectSearchAttrIds" resultType="java.lang.Long">
+        SELECT  attr_id from pms_attr
+
+        <where>
+
+            <if test="attrIds!=null and attrIds.size>0">
+                attr_id in
+                <foreach collection="attrIds" item="id" separator="," open="(" close=")">
+                    #{id}
+                </foreach>
+            </if>
+
+            <if test="1==1">
+                and search_type=1
+            </if>
+        </where>
+
+    </select>
 </mapper>

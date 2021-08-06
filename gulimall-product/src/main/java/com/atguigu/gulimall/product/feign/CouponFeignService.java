@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @FeignClient("gulimall-coupon")
-@Service
 public interface CouponFeignService {
 
 

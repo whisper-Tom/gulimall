@@ -9,6 +9,11 @@
     <name>gulimall</name>
     <description>聚合服务</description>
 
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
     <modules>
         <module>gulimall-ware</module>
         <module>gulimall-product</module>

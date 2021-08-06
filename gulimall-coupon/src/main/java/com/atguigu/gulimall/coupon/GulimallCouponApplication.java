@@ -1,8 +1,10 @@
 package com.atguigu.gulimall.coupon;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 //@EnableDiscoveryClient 这个注解是nacos注册中心的，作用的是开启微服务的注册与发现
 
@@ -48,6 +50,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableFeignClients
+@MapperScan("com.atguigu.gulimall.coupon.dao")
 public class GulimallCouponApplication {
 
     public static void main(String[] args) {

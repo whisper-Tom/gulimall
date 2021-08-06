@@ -54,7 +54,7 @@ public class SpuBoundsController {
     public R save(@RequestBody SpuBoundsEntity spuBounds){
         //@RequestBody SpuBoundsEntity spuBounds 如果写成SpuBoundTo spuBoundTo也可以
         //只要属性名对应就行了
-		spuBoundsService.save(spuBounds);
+        boolean save = spuBoundsService.save(spuBounds);
 
         return R.ok();
     }

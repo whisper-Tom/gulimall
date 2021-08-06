@@ -21,7 +21,7 @@ import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 @Slf4j
 //@ResponseBody
 //@ControllerAdvice
-@RestControllerAdvice(basePackages = "com.atguigu.gulimall.product.controller")
+@RestControllerAdvice(basePackages = "com.atguigu.gulimall.product.app")
 public class GulimallExceptionControllerAdvice {
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)

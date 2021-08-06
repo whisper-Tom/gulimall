@@ -17,4 +17,8 @@
     </resultMap>
 
 
+
+    <update id="upSpuStatus">
+        update pms_spu_info set publish_status=#{code} where id=#{spuId}
+    </update>
 </mapper>
